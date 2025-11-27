@@ -1,0 +1,89 @@
+<section class="services-section py-5" style="margin-top:-140px;">
+    <div class="text-center mb-5">
+        <h6 class="service-subtitle">Our Services</h6>
+        <h2 class="service-title">WHAT WE OFFER</h2>
+    </div>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+            <!-- CARD 1 -->
+            <div class="swiper-slide service-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/106/106817.png" class="service-icon">
+                <h5 class="service-heading">Building Construction</h5>
+                <p class="service-text">
+                    From residential homes to commercial complexes, we deliver top-quality construction 
+                    with precision, durability, and attention to detail. Every project is built to meet 
+                    the highest standards of safety and strength.
+                </p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="swiper-slide service-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/106/106817.png" class="service-icon">
+                <h5 class="service-heading">Renovation & Remodeling</h5>
+                <p class="service-text">
+                    We transform existing spaces into modern, functional, and stylish environments. 
+                    Whether it's a full renovation or interior upgrade, our team ensures a seamless 
+                    blend of design and practicality.
+                </p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="swiper-slide service-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/106/106817.png" class="service-icon">
+                <h5 class="service-heading">Project Management</h5>
+                <p class="service-text">
+                    Our experts handle every stage — from planning and budgeting to execution and 
+                    supervision. We ensure projects are completed on time, within budget, and to your satisfaction.
+                </p>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="swiper-slide service-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/106/106817.png" class="service-icon">
+                <h5 class="service-heading">Historical Restoration</h5>
+                <p class="service-text">
+                    We preserve and restore heritage buildings with precision, maintaining authenticity 
+                    while strengthening structural integrity for future generations.
+                </p>
+            </div>
+            <!-- CARD 5 -->
+<div class="swiper-slide service-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/106/106817.png" class="service-icon">
+    <h5 class="service-heading">Interior Design</h5>
+    <p class="service-text">
+        Our interior design team creates elegant, functional, and modern living and working 
+        environments. We blend aesthetics with purpose to ensure every space feels inspiring 
+        and comfortable.
+    </p>
+</div>
+<!-- CARD 6 -->
+<div class="swiper-slide service-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/106/106817.png" class="service-icon">
+    <h5 class="service-heading">Architecture Planning</h5>
+    <p class="service-text">
+        From concept to blueprint, our architects develop smart, sustainable, and visually 
+        appealing plans tailored to your requirements. Every design is crafted with precision 
+        and long-term value in mind.
+    </p>
+</div>
+
+
+
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3.2,  
+    spaceBetween: 40,
+    loop: true,
+    grabCursor: true,  // cursor se drag possible
+});
+</script>
+
+
