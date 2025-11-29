@@ -19,3 +19,6 @@ Route::get('singleser', function () {
 Route::get('projects', function () {
     return view('projects');
 })->name('projects');
+Route::get('singlepro', function () {
+    return view('singlepro');
+})->name('singlepro');

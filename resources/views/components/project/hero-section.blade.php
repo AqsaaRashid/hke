@@ -3,11 +3,11 @@
         <div class="container text-white">
             <div class="hero-content">
                 <p class="breadcrumb-text">
-<a href="{{ url('/') }}" class="breadcrumb-link">Home></a> &gt;Building Construction> &gt;
+<a href="{{ url('/') }}" class="breadcrumb-link">Home></a> &gt;Sitara Market> &gt;
 
 </p>
 
-                <h1 class="fw-bold" style="font-size:5rem;">BUILDING<br>CONSTRUCTION</h1>
+                <h1 class="fw-bold" style="font-size:5rem;">SITARA<br> MARKET</h1>
                 
                 
             </div>

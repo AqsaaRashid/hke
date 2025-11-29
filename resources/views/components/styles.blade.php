@@ -352,12 +352,12 @@ z-index: 5; /* 🔥 Forces image to be in front */
 
 /* services */
 /* Container spacing */
-.services-section {
+.servicess-section {
     background: #ffffff;
 }
 
 /* Titles */
-.service-subtitle {
+.servicess-subtitle {
     font-size: 14px;
     font-weight: 500;
     color: #2761A3;
@@ -365,32 +365,32 @@ z-index: 5; /* 🔥 Forces image to be in front */
     letter-spacing: 2px;
 }
 
-.service-title {
+.servicess-title {
     font-size: 32px;
     font-weight: 800;
     color: #04182F;
 }
 
 /* SLIDER CARD STYLING */
-.service-card {
+.servicess-card {
     width: 300px !important;   /* EXACT smaller width */
     padding-right: 35px;
     border-right: 1px solid #dcdcdc; /* same divider */
 }
 
-.service-card:last-child {
+.servicess-card:last-child {
     border-right: none;
 }
 
 /* ICON */
-.service-icon {
+.servicess-icon {
     width: 45px;
     opacity: 0.8;
     margin-bottom: 15px;
 }
 
 /* Heading */
-.service-heading {
+.servicess-heading {
     font-size: 17px;
     font-weight: 700;
     color: #04182F;
@@ -398,7 +398,7 @@ z-index: 5; /* 🔥 Forces image to be in front */
 }
 
 /* Text */
-.service-text {
+.servicess-text {
     font-size: 13px;
     line-height: 1.6;
     color: #555;
@@ -2013,6 +2013,183 @@ z-index: 5; /* 🔥 Forces image to be in front */
 
 .faqq-btn:hover {
     background-color: #1b3578;
+}
+
+
+/* recent projectsssss */
+
+
+.recenttt-work {
+    width: 90%;   /* 🔥 Was 90% — now perfect smaller width */
+    margin: 40px auto;
+    padding: 30px; /* Was 40 — reduced for smaller height */
+    border-radius: 15px;
+    color: white;
+
+    
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+
+
+
+/* Header */
+.rwww-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.subbb-title {
+    font-size: 16px;
+    opacity: 0.7;
+    letter-spacing: 1px;
+    color:  #2761A3 !important;
+}
+
+.mainnn-title {
+    font-size: 32px;
+    margin-top: -5px !important;
+    color: #04182F !important;
+}
+
+/* SEE ALL PROJECTS BUTTON WITH WHITE ARROW BOX */
+.seee-projects {
+    padding-right:  10px;
+    padding-left:  10px;
+
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.seee-projects span {
+    background: white;
+    color: #000 !important;
+    padding: 5px 7px;
+    border-radius: 0px;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+/* Card Container */
+.rwww-card {
+    display: flex;
+    gap: 20px;
+    backdrop-filter: blur(4px);
+    margin-top: 60px;
+}
+
+/* Image Section (WIDER THAN BEFORE) */
+.rwww-image {
+    width: 50%;
+}
+
+.rwww-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Content Section (NARROWER NOW) */
+.rwww-content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left:30px;
+    color: #000 !important;
+
+}
+
+.rwww-title {
+    font-size: 28px;
+    margin-bottom: 5px;
+        color: #000 !important;
+        margin-bottom:20px;
+
+}
+
+.rwww-description {
+    opacity: 0.8;
+    line-height: 1.2;
+        color: #000 !important;
+        margin-bottom: 50px;
+
+}
+
+/* Info Section with lines below each field */
+.rwww-info {
+    margin-top: -11px !important;
+        color: #000 !important;
+
+}
+
+.rwww-info div {
+    
+    margin-bottom: 5px !important ;
+    border-bottom: 1px solid  #535355;
+;
+        color: #000 !important;
+
+}
+
+.labelll {
+    font-size: 12px;
+    opacity: 0.6;
+        color: #000 !important;
+
+}
+
+.valueee {
+    font-size: 15px;
+    margin-top: -10px;
+        color: #000 !important;
+
+}
+
+/* VIEW DETAILS BUTTON WITH ONLY LINE + ARROW */
+.viewww-details {
+    background: transparent;
+    border: none;
+    font-size: 15px;
+     color: #2761A3 !important;
+
+    cursor: pointer;
+    margin-top: -2px !important;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.viewww-details::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 110px;
+    height: 1px;
+    color: #2761A3;
+    background: #2761A3;
+}
+
+.new {
+    font-size: 18px;
+        color: #2761A3!important;
+
+    margin-left: 5px;
 }
 
 
