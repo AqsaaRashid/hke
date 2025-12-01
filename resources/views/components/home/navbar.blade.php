@@ -64,7 +64,7 @@
         <li class="nav-item"><a class="nav-link" href="{{ route('aboutus') }}">ABOUT US</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ route('services') }}">SERVICES</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ route('projects') }}">PROJECTS</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">CONTACT US</a></li>
       </ul>
     </div>
 

@@ -8,6 +8,8 @@
         @include('components.project.overview')
         @include('components.project.testimonial')
         @include('components.project.gallery')
+        @include('components.project.recent')
+
 
 
         @include('components.home.footer')

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
+ });
 
 Route::get('aboutus', function () {
     return view('aboutus');
@@ -22,3 +22,6 @@ Route::get('projects', function () {
 Route::get('singlepro', function () {
     return view('singlepro');
 })->name('singlepro');
+Route::get('contact', function () {
+    return view('contact');
+})->name('contact');

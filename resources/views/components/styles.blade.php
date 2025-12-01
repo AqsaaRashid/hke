@@ -1,7 +1,7 @@
 <style>
   
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
   }
 
         /* ===== TOP BAR ===== */
