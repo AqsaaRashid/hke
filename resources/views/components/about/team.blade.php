@@ -30,8 +30,8 @@
         </div>
     </div>
 
-    <h4 class="expert-name">Ethan Olivia</h4>
-    <span class="expert-role">Head of Architect</span>
+    <h4 class="expert-name">Ahmed Raza</h4>
+    <span class="expert-role">Project Manager</span>
 </div>
         <!-- CARD TEMPLATE REPEATED -->
         <div class="expert-card">
@@ -52,8 +52,8 @@
         </div>
     </div>
 
-    <h4 class="expert-name">Ethan Olivia</h4>
-    <span class="expert-role">Head of Architect</span>
+    <h4 class="expert-name">Sara Khan</h4>
+    <span class="expert-role">Senior Architect</span>
 </div>
 
        <div class="expert-card">
@@ -74,8 +74,8 @@
         </div>
     </div>
 
-    <h4 class="expert-name">Ethan Olivia</h4>
-    <span class="expert-role">Head of Architect</span>
+    <h4 class="expert-name">Bilal Malik</h4>
+    <span class="expert-role">Site Engineer</span>
 </div>
 
         <div class="expert-card">
@@ -96,8 +96,8 @@
         </div>
     </div>
 
-    <h4 class="expert-name">Ethan Olivia</h4>
-    <span class="expert-role">Head of Architect</span>
+    <h4 class="expert-name">Fatima Ali</h4>
+    <span class="expert-role">Interior Designer</span>
 </div>
 
     </div>

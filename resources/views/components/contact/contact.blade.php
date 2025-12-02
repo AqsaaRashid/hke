@@ -1,4 +1,4 @@
-<section class="contact">
+<section class="contact" style="margin-bottom:40px;">
 <div class="contact-section">
     <h6>Contact Us</h6>
     <h2>MESSAGE US FOR DETAILS</h2>
@@ -67,9 +67,30 @@
     </div>
 
 </div>
+
+
+<div class="contact-map">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.1274818595043!2d73.109!3d33.620!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df95123456789%3A0xabcdef123456789!2sGulberg%20Greens%2C%20Islamabad!5e0!3m2!1sen!2sPK!4v1730000000000"
+        width="100%"
+        height="350"
+        style="border:0; border-radius:10px;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+</div>
+
 </section>
 
 <style>
+    .contact-map {
+    width: 100%;
+    max-width: 840px;
+    margin: -25px auto 0 auto;
+    padding: 0 20px;
+    border-radius: 0px !important;
+}
+
     .contact{
         max-width: 1400px !important;
     }
@@ -105,7 +126,7 @@
     .contact-form-box {
         width: 430px;
         background: #f7f8fa;
-        border-radius: 6px;
+        border-radius: 0px;
         padding: 25px;
     }
 
