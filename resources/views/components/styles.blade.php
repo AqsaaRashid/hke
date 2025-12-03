@@ -80,6 +80,7 @@
     align-items: center;
     margin-left:107px;
     margin-right: 89px;
+    z-index: 5;
 }
 
         .navbar-nav {
@@ -133,7 +134,7 @@
     height: 90vh;
     position: relative;
     margin-top:-30px;
-    z-index: -1; /* pushes the hero section behind other elements */
+    z-index: 1; /* pushes the hero section behind other elements */
 }
 
 .hero-overlay {
@@ -161,6 +162,7 @@
     border: none;
     border-radius: 0px !important;
     padding: 10px 25px;
+    cursor: pointer;
 }
 
 .hero-buttons .btn-light {
@@ -1782,10 +1784,7 @@ z-index: 5; /* 🔥 Forces image to be in front */
             border: 1px solid #ffffff;
         }
 
-        .cta-btn:hover {
-            background: #e5e7eb;
-        }
-
+        
         /* Responsive tweaks */
         @media (max-width: 991.98px) {
             .service-main-card {

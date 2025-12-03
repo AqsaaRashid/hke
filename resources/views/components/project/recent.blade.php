@@ -5,7 +5,7 @@
             <h2 class="main-title" style="color: #04182F !important;">RECENT PROJECTS</h2>
         </div>
 
-       <a href="#" class="faq-btn" style=" padding-right:20px; padding-left:30px;">
+       <a href="projects" class="faq-btn" style=" padding-right:20px; padding-left:30px;">
             LOAD MORE <i class="bi bi-arrow-right"></i>
         </a>
     </div>

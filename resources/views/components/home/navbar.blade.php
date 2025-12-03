@@ -12,7 +12,7 @@
     <a href="#"><i class="fab fa-facebook-f" style="border-radius:50px; border: 2px solid #D9D9D933; padding:7px; background-color:#D9D9D933;"></i></a>
     <a href="#"><i class="fab fa-instagram" style="border-radius:50px; border: 2px solid #D9D9D933; padding:7px; background-color:#D9D9D933;"></i></a>
     <a href="#"><i class="fab fa-linkedin-in" style="border-radius:50px; border: 2px solid #D9D9D933; padding:7px; background-color:#D9D9D933;"></i></a>
-    <button class="connect-btn">CONNECT WITH US</button>
+    <a href="contact" class="connect-btn">CONNECT WITH US</a>
 </div>
 
         </div>
@@ -157,6 +157,7 @@ function closeQuote() {
 .quote-popup textarea {
     height: 120px;
     resize: none;
+    margin-top: 10px;
     margin-bottom: 15px;
 }
 

@@ -5,9 +5,11 @@
             <h2 class="main-title">RECENT WORK</h2>
         </div>
 
-        <button class="see-projects">
-            SEE ALL PROJECTS <span>→</span>
-        </button>
+      <a href="{{ route('projects') }}" class="see-projects" style="text-decoration:none;">
+    SEE ALL PROJECTS <span>→</span>
+</a>
+
+
     </div>
 
     <div class="rw-card">
@@ -43,9 +45,9 @@
                 </div>
             </div>
 
-            <button class="view-details">
+             <a href="{{ route('singlepro') }}"class="view-details" style="text-decoration:none;">
                 View Details <span>→</span>
-            </button>
+</a>
         </div>
     </div>
 </section>

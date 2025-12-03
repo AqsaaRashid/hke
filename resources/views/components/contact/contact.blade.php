@@ -8,8 +8,8 @@
 
     {{-- LEFT FORM --}}
     <div class="contact-form-box" style="width:500px !important;">
-        <form method="POST">
-            @csrf
+        <form>
+            <!-- @csrf -->
 
             <div class="rowwwww">
                 <input type="text" name="name" placeholder="Your Name">

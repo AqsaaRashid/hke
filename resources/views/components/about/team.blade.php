@@ -6,7 +6,7 @@
             <h2 class="experts-title">MEET THE EXPERTS</h2>
         </div>
 
-        <a href="#" class="experts-btn">LOAD MORE <i class="bi bi-arrow-right"></i></a>
+        <a href="services" class="experts-btn">LOAD MORE <i class="bi bi-arrow-right"></i></a>
     </div>
 
     <div class="experts-grid">

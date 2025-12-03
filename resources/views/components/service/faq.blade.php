@@ -43,7 +43,7 @@
         </div>
     </div>
 
-         <a href="#" class="faq-btn">
+         <a href="contact" class="faq-btn">
             ASK A QUESTION <i class="bi bi-arrow-right"></i>
         </a>
 </div>

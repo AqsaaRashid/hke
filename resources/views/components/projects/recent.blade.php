@@ -44,9 +44,9 @@
                 </div>
             </div>
 
-            <button class="viewww-details">
+            <a href="singlepro" class="viewww-details" style="text-decoration:none;">
                 View Details <span class="new">→</span>
-            </button>
+</a>
         </div>
     </div>
 

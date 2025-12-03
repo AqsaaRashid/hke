@@ -9,7 +9,12 @@
 
             <!-- CARD 1 -->
             <div class="swiper-slide servicess-card">
-<img src="/images/b1.png" class="servicess-icon">                <h5 class="servicess-heading">Building Construction</h5>
+<img src="/images/b1.png" class="servicess-icon">                
+<h3>
+    <a href="{{ route('singleser') }}"class="servicess-heading" style="text-decoration:none; color:inherit;">
+        Building Construction
+    </a>
+</h3>
                 <p class="servicess-text">
                     From residential homes to commercial complexes, we deliver top-quality construction 
                     with precision, durability, and attention to detail. Every project is built to meet 

@@ -11,7 +11,12 @@
     <!-- CARD 1 -->
     <div class="service-cards">
          <img src="/images/b1.png"class="servicess-icon">
-        <h3>Building Construction</h3>
+       <h3>
+    <a href="{{ route('singleser') }}" style="text-decoration:none; color:inherit;">
+        Building Construction
+    </a>
+</h3>
+
         <p>From residential homes to commercial complexes, we deliver top-quality
             construction with precision, durability, and attention to detail. Every project is 
             built to meet the highest standards of safety and strength.</p>
