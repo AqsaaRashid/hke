@@ -145,6 +145,20 @@ function closeQuote() {
 }
 </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const backToTop = document.querySelector('.back-to-top');
+
+        if (backToTop) {
+            backToTop.addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' // smooth scroll to top
+                });
+            });
+        }
+    });
+</script>
 
 
 <style>
@@ -222,5 +236,200 @@ function closeQuote() {
     cursor: pointer;
     color: #555;
 }
+
+/* ===========================================
+   RESPONSIVE FOOTER — TABLET SCREEN
+   =========================================== */
+
+@media (max-width: 992px) {
+
+    /* Make newsletter box centered and fluid */
+    .newsletter-box {
+        width: 80%;
+        margin-left: 0;
+        margin: 20px auto;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter-box input,
+    .newsletter-box button {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Footer boxes become 2 columns */
+    .footer-content {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .footer-box {
+        width: 48%;    /* Two boxes per row */
+    }
+
+    .footer-box ul {
+        margin-left: 0 !important;
+        text-align: left;
+    }
+
+    /* Social icons wrap */
+    .footer-social {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* ===========================================
+   RESPONSIVE FOOTER — MOBILE SCREEN
+   =========================================== */
+
+@media (max-width: 768px) {
+
+    /* Make newsletter full width */
+    .newsletter-box {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    /* Footer boxes become single column */
+    .footer-box {
+        width: 100%;
+        text-align: left;
+    }
+
+    .footer-logo {
+        width: 120px;
+        margin-bottom: 15px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
+
+    /* Ensure list alignment is clean */
+    .footer-box ul {
+        margin-left: 0 !important;
+        padding-left: 0;
+    }
+
+    .footer-box h3 {
+        margin-left: 0 !important;
+    }
+
+    .footerr-line {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    /* Footer bottom */
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+    .footer-links{
+    color: #2761A3 !important ;
+
+    }
+
+    .back-to-top {
+        right: 20px;
+        top: -18px;
+    }
+}
+
+
+/* ===========================================
+   RESPONSIVE FOOTER — SMALL PHONE
+   =========================================== */
+
+@media (max-width: 480px) {
+
+    .newsletter h2 {
+        font-size: 22px;
+    }
+
+    .newsletter-box input {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+
+    .footer-box {
+        width: 100%;
+    }
+
+    .footer-box h3 {
+        font-size: 18px;
+    }
+
+    .footer-bottom span {
+        font-size: 12px;
+    }
+
+    .back-to-top {
+        width: 32px;
+        height: 32px;
+        right: 15px;
+        font-size: 14px;
+    }
+}
+/* FIX GET IN TOUCH ON MOBILE */
+@media (max-width: 768px) {
+
+    /* Remove the problematic left margin */
+    .footer-content .footer-box:nth-child(2) {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    /* Cleaner spacing between contact items */
+    .footerr-line {
+        display: flex;
+        align-items: flex-start !important;
+        gap: 12px;
+        margin-bottom: 18px !important;
+        line-height: 20px !important;
+    }
+
+    /* Fix icon alignment */
+    .icon-circle {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2px;
+    }
+
+    .icon-circle i {
+        font-size: 14px !important;
+    }
+
+    /* Phone / email text fixes */
+    .footerr-line span + span,
+    .footerr-line br + span {
+        display: block;
+    }
+
+    .footerr-line {
+        font-size: 14px;
+        color: #D5D5D5;
+    }
+
+    /* Make all footer boxes visually clean on mobile */
+    .footer-box h3 {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 18px !important;
+    }
+}
+
 
 </style>

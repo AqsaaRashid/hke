@@ -208,4 +208,86 @@
         margin: 20px 0;
         width: 100%;
     }
+    /* res */
+    /* ===============================
+   RESPONSIVE – TABLET & MOBILE
+   =============================== */
+
+@media (max-width: 1024px) {
+    .contact-wrapper {
+        gap: 30px;
+        padding: 15px;
+    }
+
+    .contact-form-box {
+        width: 100% !important;
+        max-width: 520px;
+    }
+
+    .iinfo-box {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .contact-map {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .contact-form-box {
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .iinfo-box {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .rowwwww {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .rowwwww input {
+        width: 100%;
+    }
+
+    .contact-section h2 {
+        font-size: 24px;
+    }
+
+    .contact-map iframe {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 0 10px;
+    }
+
+    .contact-section h2 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .btnn-custom {
+        width: 100%;
+    }
+
+    .contact-map iframe {
+        height: 260px;
+        border-radius: 6px;
+    }
+}
+
 </style>

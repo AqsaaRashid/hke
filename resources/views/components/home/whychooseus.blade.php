@@ -55,3 +55,105 @@
 
     </div>
 </section>
+<style>
+    @media (max-width: 992px) {
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .why-image-box {
+        grid-row: unset;
+        height: auto;
+    }
+
+    .why-image-box img {
+        height: 100% !important;
+        max-height: 420px;
+        object-fit: cover;
+    }
+
+    .why-card p {
+        margin-left: 0 !important;
+        text-align: left !important;
+    }
+}
+@media (max-width: 768px) {
+
+    .main-titlee {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .sub-titlee {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .why-card {
+        grid-template-columns: 45px auto;
+        padding: 20px;
+    }
+
+    .icon-box {
+        width: 45px;
+        height: 45px;
+    }
+
+    .icon-box i {
+        font-size: 18px;
+    }
+
+    .card-text-area h3 {
+        font-size: 16px;
+    }
+
+    .why-card p {
+        margin-left: 0 !important;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .why-image-box img {
+        width: 100%;
+        height: 260px !important;
+        border-radius: 12px;
+        object-fit: cover;
+    }
+}
+@media (max-width: 480px) {
+
+    .main-titlee {
+        font-size: 22px;
+    }
+
+    .why-card {
+        padding: 18px;
+        grid-template-columns: 40px auto;
+    }
+
+    .icon-box {
+        width: 40px;
+        height: 40px;
+    }
+
+    .icon-box i {
+        font-size: 16px;
+    }
+
+    .why-image-box img {
+        height: 220px !important;
+    }
+}
+
+</style>

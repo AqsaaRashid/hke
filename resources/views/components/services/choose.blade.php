@@ -50,3 +50,110 @@
 
    
 </section>
+<style>
+    /* ======================================
+   RESPONSIVE – HOW WE WORK (WHY CHOOSE US)
+   ====================================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+    .whyy-grid {
+        grid-template-columns: 1fr 60px 1.4fr 60px 1fr;
+        gap: 10px;
+    }
+
+    .circle-wrapper .circle-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .circle-wrapper.large .circle-img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .arrowss {
+        font-size: 60px;
+        margin-top: -70px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .whyy-choose-us {
+        padding: 40px 20px;
+    }
+
+    .whyy-title {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    .whyy-grid {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+
+    .arrowss {
+        display: none;
+    }
+
+    .circle-wrapper .circle-img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .circle-wrapper.large .circle-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .circle-wrapper.large .number-tag {
+        bottom: 150px;
+        right: 10px;
+    }
+
+    .whyy-card h3 {
+        font-size: 17px;
+    }
+
+    .whyy-card p {
+        font-size: 14px;
+        line-height: 1.6;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    .whyy-title {
+        font-size: 22px;
+    }
+
+    .whyy-subtitle {
+        font-size: 14px;
+    }
+
+    .circle-wrapper .circle-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .circle-wrapper.large .circle-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .number-tag {
+        width: 38px;
+        height: 38px;
+        font-size: 14px;
+    }
+}
+
+</style>

@@ -72,8 +72,10 @@
     .about-section {
         text-align: center;
     }
+    #aboutAccordion{
+     margin-bottom:20px !important;
     
-
+    }
 
 
     .content-col {
@@ -136,6 +138,7 @@
 
     .accordion-body {
         font-size: 13px;
+       
     }
 }
 /* Tablet and below */
@@ -163,12 +166,12 @@
 @media (max-width: 768px) {
 
     .about-img {
-        top:150px !important;
-        margin-bottom: 90px !important;
+        margin-bottom: -60px !important;
         text-align: center;
     }
 
     .about-img img {
+        top:-90px !important;
         max-width: 100%;
         height: auto;
     }

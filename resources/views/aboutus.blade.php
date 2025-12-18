@@ -4,7 +4,7 @@
 
        @include('components.home.navbar')
         @include('components.about.hero-section')
-         @include('components.home.about')
+         @include('components.about.new')
          @include('components.about.about')
           @include('components.about.cards')
            @include('components.about.team')

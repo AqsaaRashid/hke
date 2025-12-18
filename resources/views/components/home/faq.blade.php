@@ -83,3 +83,138 @@
 
 
 </section>
+<style>
+    @media (max-width: 992px) {
+
+    .faq-section {
+        padding: 50px 20px;
+        margin-left: 0 !important;
+        max-width: 100% !important;
+    }
+
+    .faq-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .faq-title {
+        font-size: 28px;
+    }
+
+    .faq-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        max-width: 100%;
+    }
+
+    .faq-item h3 {
+        font-size: 17px;
+    }
+
+    .faq-item p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .faq-btn {
+        padding: 6px 14px;
+        font-size: 13px;
+    }
+
+    .faq-btn i {
+        width: 34px;
+        height: 34px;
+        padding-top: 6px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+
+    .faq-header {
+        text-align: left;
+        gap: 10px;
+    }
+
+    .faq-section {
+        padding: 40px 15px;
+    }
+
+    .faq-title {
+        font-size: 24px;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .faq-item {
+        padding-right: 0;
+    }
+
+    .faq-item h3 {
+        font-size: 16px;
+    }
+
+    .faq-item p {
+        font-size: 13.5px;
+    }
+
+    .faq-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .faq-btn {
+        align-self: stretch;
+        justify-content: center;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .faq-btn i {
+        width: 28px;
+        height: 28px;
+        padding-top: 5px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+
+    .faq-title {
+        font-size: 22px;
+    }
+
+    .faq-subtitle {
+        font-size: 14px;
+    }
+
+    .faq-grid {
+        gap: 22px;
+    }
+
+    .faq-item h3 {
+        font-size: 15px;
+    }
+
+    .faq-item p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .faq-btn {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .faq-btn i {
+        width: 25px;
+        height: 25px;
+        padding-top: 4px;
+        font-size: 12px;
+    }
+}
+
+</style>

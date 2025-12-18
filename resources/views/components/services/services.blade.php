@@ -67,3 +67,98 @@
 
 
 </section>
+<style>
+    /* ======================================
+   RESPONSIVE – WHAT WE OFFER (SERVICES)
+   ====================================== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+    .services-section {
+        padding: 40px 20px;
+    }
+
+    .services-title {
+        font-size: 28px;
+    }
+
+    .services-grid {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 30px;
+        padding: 0 20px;
+    }
+
+    .service-cards::before {
+        display: none;
+    }
+
+    .service-cards::after {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .services-section {
+        padding: 30px 15px;
+    }
+
+    .services-title {
+        font-size: 24px;
+        margin-bottom: 35px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0;
+    }
+
+    .service-cards {
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
+    .servicess-icon {
+        width: 42px;
+        margin-bottom: 12px;
+    }
+
+    .service-cards h3 {
+        font-size: 17px;
+    }
+
+    .service-cards p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    .services-title {
+        font-size: 22px;
+    }
+
+    .services-subtitle {
+        font-size: 14px;
+    }
+
+    .servicess-icon {
+        width: 38px;
+    }
+
+    .service-cards h3 {
+        font-size: 16px;
+    }
+
+    .service-cards p {
+        font-size: 13px;
+    }
+}
+
+</style>

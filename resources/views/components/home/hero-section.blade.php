@@ -155,5 +155,104 @@ function closeQuote() {
     cursor: pointer;
     color: #555;
 }
+/* =======================================
+   HERO SECTION RESPONSIVE FIXES
+   ======================================= */
+
+/* Tablet & Mobile */
+@media (max-width: 992px) {
+
+    .hero-section {
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero-buttons .btn {
+        width: 80%;
+        max-width: 280px;
+    }
+}
+
+
+/* Mobile Only */
+@media (max-width: 768px) {
+
+    .hero-content h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .hero-overlay {
+        padding: 60px 0;
+    }
+
+    /* Stats section */
+    .stats-row {
+        margin-top: 20px !important;
+    }
+
+    .stat-card {
+        margin-bottom: 15px;
+        text-align: center;
+        padding: 20px !important;
+        border-radius: 6px;
+    }
+
+    .stat-card i {
+        font-size: 26px !important;
+        margin-bottom: 6px;
+    }
+
+    .stat-card h4 {
+        font-size: 22px;
+        margin: 5px 0;
+    }
+
+    .stat-card p {
+        font-size: 14px;
+        margin: 0;
+    }
+}
+
+
+/* Extra Small Phones */
+@media (max-width: 480px) {
+
+    .hero-content h1 {
+        font-size: 26px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .stat-card {
+        padding: 16px !important;
+    }
+
+    .stat-card i {
+        font-size: 22px !important;
+    }
+}
+
 
 </style>

@@ -86,5 +86,114 @@ var swiper = new Swiper(".mySwiper", {
     grabCursor: true,  // cursor se drag possible
 });
 </script>
+<script>
+var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 40,
 
+    breakpoints: {
+        1200: { slidesPerView: 3.2 },
+        992: { slidesPerView: 2.2 },
+        768: { slidesPerView: 1.5 },
+        480: { slidesPerView: 1.15 },
+        0:   { slidesPerView: 1.1 }
+    }
+});
+</script>
 
+<style>
+
+/* ================================
+   RESPONSIVE SERVICES SECTION
+   ================================ */
+
+/* Tablet */
+@media (max-width: 992px) {
+
+    .servicess-title {
+        font-size: 28px;
+        overflow: hidden !important;
+    }
+
+    .servicess-card {
+        width: 260px !important;
+        padding-right: 25px;
+        border-right: 1px solid #e5e5e5;
+    }
+
+    .servicess-icon {
+        width: 40px;
+    }
+
+    .servicess-text {
+        font-size: 13px;
+    }
+
+    .swiper {
+        padding-left: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .servicess-section {
+        margin-top: -40px !important;
+        padding-top: 30px !important;
+    }
+
+    .servicess-title {
+        font-size: 24px;
+    }
+
+    .servicess-card {
+        width: 75% !important;
+        border-right: none;
+        background: #fff;
+        padding: 20px !important;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        text-align: center;
+    }
+
+    .servicess-icon {
+        width: 38px;
+        margin-bottom: 10px;
+    }
+
+    .servicess-text {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .swiper {
+        padding-left: 10px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+
+    .servicess-title {
+        font-size: 22px;
+    }
+
+    .servicess-card {
+        width: 85% !important;
+        padding: 18px !important;
+    }
+
+    .servicess-icon {
+        width: 35px;
+    }
+
+    .servicess-heading {
+        font-size: 16px;
+    }
+
+    .servicess-text {
+        font-size: 13px;
+    }
+}
+</style>

@@ -6,14 +6,14 @@
  <i class="fa-solid fa-envelope-open-text"></i></i> rosamikamal@hkebuilders.com
 </div>
 
-           <div class="social-icons d-flex align-items-center">
-                <a href="#"><i class="fab fa-twitter" style="border-radius:50px; border: 2px solid #D9D9D933; padding:7px; background-color:#D9D9D933;"></i></a>
-
-    <a href="#"><i class="fab fa-facebook-f" style="border-radius:50px; border: 2px solid #D9D9D933; padding:7px; background-color:#D9D9D933;"></i></a>
-    <a href="#"><i class="fab fa-instagram" style="border-radius:50px; border: 2px solid #D9D9D933; padding:7px; background-color:#D9D9D933;"></i></a>
-    <a href="#"><i class="fab fa-linkedin-in" style="border-radius:50px; border: 2px solid #D9D9D933; padding:7px; background-color:#D9D9D933;"></i></a>
+                <div class="social-icons d-flex align-items-center">
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
     <a href="contact" class="connect-btn">CONNECT WITH US</a>
 </div>
+
 
         </div>
     </div>
@@ -107,6 +107,7 @@ function closeQuote() {
 
 
 <style>
+    
   .quote-overlay {
     position: fixed;
     top: 0;
@@ -119,6 +120,24 @@ function closeQuote() {
     align-items: center;
     z-index: 99999;
 }
+@media (max-width: 992px) {
+    .navbar {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        width: 100% !important;
+    }
+}
+@media (max-width: 992px) {
+    .navbar-nav {
+        margin-left: 0 !important;
+    }
+}
+@media (max-width: 768px) {
+    .top-bar .connect-btn {
+        margin-left: 0 !important;
+    }
+}
+
 
 .quote-popup {
     width: 450px;
@@ -181,5 +200,215 @@ function closeQuote() {
     cursor: pointer;
     color: #555;
 }
+/* ==============================
+   RESPONSIVE FIXES ONLY
+   ============================== */
+
+/* Top Bar */
+@media (max-width: 768px) {
+    .top-bar .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .top-bar .text-end {
+        margin: 0 auto !important;
+    }
+}
+
+/* Header Middle */
+@media (max-width: 768px) {
+    .header-middle .logo img {
+        max-width: 160px;
+        margin-bottom: 10px;
+        margin-top:-20px;
+    }
+
+    .info-box {
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+        text-align: center;
+        gap: 10px;
+    }
+
+    
+
+    .header-middle .row > div {
+        margin-bottom: 15px;
+    }
+}
+/* =======================================
+   FIX CALL + LOCATION BOX LOOK ON MOBILE
+   ======================================= */
+@media (max-width: 768px) {
+
+    /* Reset icon size (your 180px was breaking layout) */
+    .info-box i {
+        font-size: 16px !important;
+        margin-right: 8px;
+        color: #2761A3;
+    }
+
+    /* Make icon and text stack clean + aligned */
+    .info-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center !important;
+        text-align: left !important;
+        gap: 12px !important;
+        width: 100%;
+        padding: 6px 0;
+    }
+
+    /* Text styling inside */
+    .info-box div strong {
+        font-size: 15px;
+        line-height: 1.2;
+        display: block;
+        margin-bottom: 3px;
+        text-align: left !important;
+    }
+
+    .info-box div small {
+        font-size: 13px;
+        line-height: 1.3;
+        text-align: left !important;
+        display: block;
+        max-width: 160px;
+    }
+
+    /* Ensure the two boxes appear clean and equal */
+    .header-middle .col-6 {
+        display: flex;
+        justify-content: center !important;
+    }
+}
+
+
+/* Navbar */
+@media (max-width: 992px) {
+    .main-navbar {
+        padding: 10px 0;
+        max-width:500px !important;
+        margin:0px !important;
+
+    }
+
+    .navbar-collapse {
+        background: #04182F;
+        padding: 10px;
+        border-radius: 6px;
+        margin-top: 10px;
+        max-width:500px !important
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .quote-btn {
+        margin-left: 0 !important;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* Quote Popup Mobile Fix */
+@media (max-width: 480px) {
+    .quote-popup {
+        width: 92%;
+        padding: 18px;
+    }
+
+    .quote-row {
+        flex-direction: column;
+    }
+
+
+}
+/* =======================================
+   FIX HEADER-MIDDLE ALIGNMENT ON MOBILE
+   ======================================= */
+@media (max-width: 768px) {
+
+    /* Force call + location boxes to 50/50 clean layout */
+    .header-middle .col-6 {
+        display: flex;
+        justify-content: center !important;
+    }
+
+    .info-box {
+        width: 100%;
+        justify-content: center !important;
+        text-align: center;
+        gap: 0px !important;
+    }
+
+    .info-box div strong {
+        display: block;
+    }
+}
+
+/* =======================================
+   MAKE MOBILE DRAWER (NAVBAR) VISIBLE
+   ======================================= */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background: #04182F !important;  /* DARK NAV BACKGROUND */
+        padding: 15px;
+        border-radius: 6px;
+        margin-top: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        color: white !important;        /* WHITE LINKS FOR DARK BACKGROUND */
+        text-align: center;
+        padding: 12px 0;
+    }
+
+    .navbar-toggler {
+        background: #04182F !important; /* DARK BUTTON BACKGROUND */
+        padding: 8px 10px;
+        border-radius: 4px;
+    }
+
+    .navbar-toggler i {
+        color: #fff !important;         /* WHITE ICON */
+    }
+
+    .main-navbar {
+        background: #04182F;            /* Keep navbar dark on mobile */
+    }
+
+    /* Quote button full width */
+    .quote-btn {
+        width: 100%;
+        margin-left: 0 !important;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* =======================================
+   EXTRA FIX: Prevent drawer overlap
+   ======================================= */
+@media (max-width: 500px) {
+    .navbar-collapse {
+        width: 100%;
+    }
+}
+
 
 </style>

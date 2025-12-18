@@ -2,6 +2,8 @@
   
   body {
     font-family: 'Roboto', sans-serif !important;
+    overflow-x: hidden;
+
   }
 
         /* ===== TOP BAR ===== */
@@ -18,6 +20,18 @@
             margin-left: 12px;
             font-size: 14px;
         }
+        .top-bar .social-icons i {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #D9D9D933;
+    background-color: #D9D9D933;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px; /* adjust icon size */
+}
+
 
         .top-bar .connect-btn {
             background-color: #2761A3;

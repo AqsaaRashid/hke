@@ -190,3 +190,125 @@
         </div>
     </div>
 </section>
+<style>
+    /* ===============================
+   RESPONSIVE – RECENT WORK SECTION
+   =============================== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+    .recenttt-work {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .rwww-card {
+        gap: 15px;
+    }
+
+    .rwww-image {
+        width: 48%;
+    }
+
+    .rwww-content {
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    .rwww-title {
+        font-size: 24px;
+    }
+
+    .rwww-description {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .rwww-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .rwww-card {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .rwww-image {
+        width: 100%;
+    }
+
+    .rwww-image img {
+        height: 240px;
+    }
+
+    .rwww-content {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .rwww-title {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .rwww-description {
+        margin-bottom: 30px;
+        line-height: 1.6;
+    }
+
+    .rwww-info {
+        margin-top: 0 !important;
+    }
+
+    .viewww-details {
+        margin-top: 15px !important;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    .recenttt-work {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .mainnn-title {
+        font-size: 24px;
+    }
+
+    .subbb-title {
+        font-size: 14px;
+    }
+
+    .rwww-image img {
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .rwww-title {
+        font-size: 20px;
+    }
+
+    .rwww-description {
+        font-size: 13px;
+    }
+
+    .labelll {
+        font-size: 11px;
+    }
+
+    .valueee {
+        font-size: 14px;
+    }
+}
+
+</style>
