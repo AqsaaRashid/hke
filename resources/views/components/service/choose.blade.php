@@ -57,3 +57,108 @@
 
     </div>
 </section>
+<style>
+
+    /* =========================================
+   RESPONSIVE – WHY CHOOSE OUR SERVICES
+   ========================================= */
+
+/* Large tablets */
+@media (max-width: 1200px) {
+
+    .whyyy-section {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .why-grid {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-image-box {
+        display: none; /* hide center image cleanly */
+    }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+
+    .whyyy-title {
+        font-size: 26px;
+    }
+
+    .whyyy-text {
+        max-width: 100%;
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-left: 0 !important;
+    }
+
+    .why-card p {
+        margin-left: 0 !important; /* prevent overflow */
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .whyyy-section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .whyyy-title {
+        font-size: 24px;
+    }
+
+    .whyyy-text {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .why-card {
+        grid-template-columns: 50px auto;
+        padding: 20px;
+    }
+
+    .why-card p {
+        margin-left: 0 !important;
+        text-align: left !important;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    .whyyy-title {
+        font-size: 22px;
+    }
+
+    .why-card h3 {
+        font-size: 16px;
+    }
+
+    .why-card p {
+        font-size: 13px;
+    }
+
+    .icon-box {
+        width: 45px;
+        height: 45px;
+    }
+
+    .icon-box i {
+        font-size: 18px;
+    }
+}
+
+</style>

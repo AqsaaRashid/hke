@@ -47,3 +47,95 @@
             ASK A QUESTION <i class="bi bi-arrow-right"></i>
         </a>
 </div>
+<style>
+    /* =========================================
+   RESPONSIVE – FAQ SECTION
+   ========================================= */
+
+/* Large tablets */
+@media (max-width: 1200px) {
+
+    .faqq-section {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .faqq-grid {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+
+    .faqq-section {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .faqq-title {
+        font-size: 26px;
+    }
+
+    .faqq-answer {
+        max-width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .faqq-section {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .faqq-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .faqq-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .faqq-answer {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .faq-btn {
+        margin-top: 30px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    .faqq-title {
+        font-size: 22px;
+    }
+
+    .faqq-question {
+        font-size: 16px;
+    }
+
+    .faqq-answer {
+        font-size: 13px;
+    }
+
+    .faqq-number {
+        width: 38px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    .faq-btn {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+}
+
+</style>

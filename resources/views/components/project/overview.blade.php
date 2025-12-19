@@ -86,5 +86,57 @@
     flex-shrink: 0;
 }
 
+/* =======================================
+   RESPONSIVE STYLES
+   ======================================= */
+
+/* For tablets (screens up to 991px) */
+@media (max-width: 991px) {
+    .section {
+        padding: 20px;
+    }
+
+    .section-titleee {
+        font-size: 24px;  /* Slightly smaller titles */
+    }
+
+    .section-texttt {
+        font-size: 13px;  /* Slightly smaller text */
+    }
+
+    .custom-bullets li {
+        font-size: 13px;  /* Adjust bullet text for smaller screens */
+    }
+
+    .offer-dot {
+        width: 7px;  /* Smaller bullet point */
+        height: 7px;
+    }
+}
+
+/* For mobile (screens up to 767px) */
+@media (max-width: 767px) {
+    .section {
+        max-width: 100%;  /* Make section full-width on small screens */
+        padding: 15px;
+    }
+
+    .section-titleee {
+        font-size: 22px;  /* Reduce title size for mobile */
+    }
+
+    .section-texttt {
+        font-size: 12px;  /* Reduce text size for mobile */
+    }
+
+    .custom-bullets li {
+        font-size: 12px;  /* Further reduce bullet text size */
+    }
+
+    .offer-dot {
+        width: 6px;  /* Even smaller bullet point */
+        height: 6px;
+    }
+}
 
 </style>

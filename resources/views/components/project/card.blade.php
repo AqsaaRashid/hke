@@ -96,4 +96,46 @@
     color: #04182F;
 }
 
+/* For tablets (smaller screens, up to 991px) */
+@media (max-width: 991px) {
+    .project-image img {
+        height: 350px; /* Adjust image height for smaller screens */
+    }
+
+    .projectttt-info {
+        padding: 20px 30px;
+    }
+
+    .infooo-row {
+        grid-template-columns: repeat(3, 1fr); /* Reduce columns to 3 for tablets */
+    }
+}
+
+/* For mobile (up to 767px) */
+@media (max-width: 767px) {
+    .project-image img {
+        height: 250px; /* Reduce image height further */
+    }
+
+    .projectttt-info {
+        padding: 20px;
+    }
+
+    .infooo-row {
+        grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+    }
+
+    .infoooo-box {
+        padding: 10px 0;
+    }
+
+    .labellll {
+        font-size: 9px; /* Reduce font size on smaller screens */
+    }
+
+    .valueeee {
+        font-size: 12px; /* Adjust value font size */
+    }
+}
+
 </style>

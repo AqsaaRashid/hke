@@ -49,3 +49,87 @@
         </div>
     </div>
 </section>
+<style>
+    /* ==========================
+   RESPONSIVE MEDIA QUERIES
+   ========================== */
+
+/* For tablets (screens up to 991px) */
+@media (max-width: 991px) {
+    /* Adjust the card container to display in one column on smaller screens */
+    .rwww-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Adjust the image to take full width */
+    .rwww-image {
+        width: 100%;
+    }
+
+    .rwww-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .rwww-content {
+        width: 100%;
+    }
+
+    /* Reduce the font size of titles and descriptions */
+    .rwww-title {
+        font-size: 24px;
+    }
+
+    .rwww-description {
+        font-size: 14px;
+    }
+
+    /* Adjust margins and padding */
+    .rwww-info div {
+        padding: 5px 0;
+    }
+}
+
+/* For mobile devices (screens up to 767px) */
+@media (max-width: 767px) {
+    /* Card layout as single column */
+    .rwww-card {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .rwww-image {
+        width: 100%;
+    }
+
+    .rwww-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .rwww-content {
+        width: 100%;
+    }
+
+    .rwww-title {
+        font-size: 20px;
+    }
+
+    .rwww-description {
+        font-size: 14px;
+    }
+
+    .rwww-info div {
+        padding: 5px 0;
+        font-size: 12px;
+    }
+
+    /* Adjust the view details button */
+    .viewww-details {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+}
+
+</style>
