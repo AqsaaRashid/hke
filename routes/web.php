@@ -9,6 +9,12 @@ Route::get('/', function () {
 Route::get('aboutus', function () {
     return view('aboutus');
 })->name('aboutus');
+Route::get('terms', function () {
+    return view('terms');
+})->name('terms');
+Route::get('policy', function () {
+    return view('policy');
+})->name('policy');
 
 Route::get('services', function () {
     return view('services');

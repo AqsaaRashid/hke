@@ -4,13 +4,16 @@
 
     <!-- Newsletter Section -->
     <div class="newsletter">
-        <h2 style="margin-top:20px;">Subscribe to our Newsletter</h2>
+    <h2 style="margin-top:20px;">Subscribe to our Newsletter</h2>
 
-        <div class="newsletter-box">
-            <input type="email" placeholder="Enter your email">
-            <button>Subscribe Now</button>
-        </div>
+    <div class="newsletter-box">
+        <input type="email" id="newsletterEmail" placeholder="Enter your email">
+        <button id="subscribeBtn">Subscribe Now</button>
     </div>
+
+    <p id="newsletterMsg" style="margin-top:10px;"></p>
+</div>
+
 
     <!-- Divider -->
     <hr class="footer-line">
@@ -103,8 +106,14 @@
         <p style="margin-left:-15px; margin-top:8px;">Copyright@hkebuilders2025</p>
 
         <div class="footer-links" style="margin-top:8px;">
-            <span>Terms of Service</span> &nbsp;  &nbsp;
-            <span style="margin-right:30px;">Privacy Policy</span>
+           <a href="{{ route('terms') }}" style="color: inherit; text-decoration: none;">
+    Terms of Service
+</a>
+&nbsp;&nbsp;
+<a href="{{ route('policy') }}" style="margin-right:30px; color: inherit; text-decoration: none;">
+    Privacy Policy
+</a>
+
         </div>
     </div>
 
@@ -433,3 +442,61 @@ function closeQuote() {
 
 
 </style>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const btn = document.getElementById("subscribeBtn");
+    const emailInput = document.getElementById("newsletterEmail");
+    const msg = document.getElementById("newsletterMsg");
+
+    if (!btn) {
+        console.error("Subscribe button not found");
+        return;
+    }
+
+    btn.addEventListener("click", function () {
+        const email = emailInput.value.trim();
+
+        msg.innerText = "";
+        msg.style.color = "red";
+
+        if (!email) {
+            msg.innerText = "Email is required.";
+            return;
+        }
+
+        if (!/^\S+@\S+\.\S+$/.test(email)) {
+            msg.innerText = "Enter a valid email address.";
+            return;
+        }
+
+        btn.disabled = true;
+        btn.innerText = "Subscribing...";
+
+       fetch("https://formspree.io/f/mykzqqyy", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+    },
+    body: JSON.stringify({ email })
+})
+.then(res => res.json())
+.then(() => {
+    msg.style.color = "green";
+    msg.innerText = "Subscribed successfully ";
+    emailInput.value = "";
+})
+.catch(() => {
+    msg.style.color = "red";
+    msg.innerText = "Something went wrong. Try again.";
+})
+.finally(() => {
+    btn.disabled = false;
+    btn.innerText = "Subscribe Now";
+});
+
+    });
+
+});
+</script>

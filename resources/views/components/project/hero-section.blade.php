@@ -3,7 +3,7 @@
         <div class="container text-white">
             <div class="hero-content">
                 <p class="breadcrumb-text">
-<a href="{{ url('/') }}" class="breadcrumb-link">Home></a> &gt;Sitara Market> &gt;
+<a href="{{ url('/') }}" class="breadcrumb-link">Home</a> &gt;Sitara Market &gt;
 
 </p>
 
