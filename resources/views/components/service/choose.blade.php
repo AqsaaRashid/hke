@@ -1,7 +1,7 @@
 <section class="whyyy-section">
     <h2 class="whyyy-title">Why choose our services?</h2>
 
-    <p class="whyyy-text">
+    <p class="whyyy-text" style=" text-align: justify !important;">
         Choose our construction service for reliable execution, superior quality,
         and long-lasting results. We bring expertise, modern techniques, and a 
         client-first approach to every project we build.

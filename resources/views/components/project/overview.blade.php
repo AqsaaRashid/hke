@@ -1,7 +1,7 @@
 <div class="section">
 
     <h2 class="section-titleee">Project Overview</h2>
-    <p class="section-texttt">
+    <p class="section-texttt" style=" text-align: justify !important;">
         Our experts handle every stage — from planning and budgeting to execution and supervision. 
         We ensure projects are completed on time, within budget, and to your satisfaction.Our experts 
         handle every stage — from planning.Our experts handle every stage — from planning and budgeting 
@@ -12,7 +12,7 @@
     </p>
 
     <h2 class="section-titleee">Key Features</h2>
-    <p class="section-texttt">
+    <p class="section-texttt" style=" text-align: justify !important;">
         Our experts handle every stage — from planning and budgeting to execution and supervision. 
         We ensure projects are completed on time, within budget, and to your satisfaction.Our experts 
         handle every stage — from planning.Our experts handle every stage — from planning and budgeting 
@@ -29,7 +29,7 @@
 
 
     <h2 class="section-titleee">Our Role</h2>
-    <p class="section-texttt">
+    <p class="section-texttt" style=" text-align: justify !important;">
         Our experts handle every stage — from planning and budgeting to execution and supervision. 
         We ensure projects are completed on time, within budget, and to your satisfaction.Our experts 
         handle every stage — from planning.Our experts handle every stage.

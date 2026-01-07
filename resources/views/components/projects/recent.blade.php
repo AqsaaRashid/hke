@@ -19,10 +19,10 @@
         <div class="rwww-content">
             <div>
                 <h2 class="rwww-title">SITARA MARKET</h2>
-                <p class="rwww-description">
-                    The Sitara Market Construction Project stands<br>
-                    as a landmark example of our commitment to <br>
-                    quality, innovation, and precision Designed to<br>
+                <p class="rwww-description" style=" text-align: justify !important;">
+                    The Sitara Market Construction Project stands
+                    as a landmark example of our commitment to 
+                    quality, innovation, and precision Designed to
                    accommodate a wide range.
                 </p>
 
@@ -62,10 +62,10 @@
            <div>
     <h2 class="rwww-title">SKYLINE TOWERS</h2>
 
-    <p class="rwww-description">
-        Skyline Towers is a landmark high-rise residential project <br>featuring modern
-        design and sustainable construction<br> practices. The project included advanced
-        structural<br> systems and premium finishes living experience.
+    <p class="rwww-description" style=" text-align: justify !important;">
+        Skyline Towers is a landmark high-rise residential project featuring modern
+        design and sustainable construction practices. The project included advanced
+        structural systems and premium finishes living experience.
     </p>
 
     <div class="rwww-info">
@@ -109,10 +109,10 @@
     <div>
         <h2 class="rwww-title">RIVERFRONT MALL</h2>
 
-        <p class="rwww-description">
-            Riverfront Mall is a large-scale commercial development <br>designed to 
-            accommodate retail outlets, entertainment<br> spaces, and dining areas. 
-            The project focused on <br>maximizing space efficiency.
+        <p class="rwww-description" style=" text-align: justify !important;">
+            Riverfront Mall is a large-scale commercial development designed to 
+            accommodate retail outlets, entertainment spaces, and dining areas. 
+            The project focused on maximizing space efficiency.
         </p>
 
         <div class="rwww-info">
@@ -154,10 +154,10 @@
     <div>
         <h2 class="rwww-title">GREENVIEW RESIDENCES</h2>
 
-        <p class="rwww-description">
-            Greenview Residences is a residential community project<br> emphasizing
-            sustainable living and contemporary design.<br> The  project involved
-            constructing multiple housing<br> units with high-quality materials.
+        <p class="rwww-description" style=" text-align: justify !important;">
+            Greenview Residences is a residential community project emphasizing
+            sustainable living and contemporary design. The  project involved
+            constructing multiple housing units with high-quality materials.
         </p>
 
         <div class="rwww-info">

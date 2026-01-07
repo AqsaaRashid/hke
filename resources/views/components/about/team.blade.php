@@ -23,7 +23,7 @@
                 we deliver top-quality construction.
             </p>
             <div class="info-icons">
-                <i class="bi bi-twitter"></i>
+                <i class="bi bi-linkedin"></i>
                 <i class="bi bi-facebook"></i>
                 <i class="bi bi-instagram"></i>
             </div>
@@ -45,7 +45,7 @@
                 we deliver top-quality construction.
             </p>
             <div class="info-icons">
-                <i class="bi bi-twitter"></i>
+                <i class="bi bi-linkedin"></i>
                 <i class="bi bi-facebook"></i>
                 <i class="bi bi-instagram"></i>
             </div>
@@ -67,7 +67,7 @@
                 we deliver top-quality construction.
             </p>
             <div class="info-icons">
-                <i class="bi bi-twitter"></i>
+                <i class="bi bi-linkedin"></i>
                 <i class="bi bi-facebook"></i>
                 <i class="bi bi-instagram"></i>
             </div>
@@ -89,7 +89,7 @@
                 we deliver top-quality construction.
             </p>
             <div class="info-icons">
-                <i class="bi bi-twitter"></i>
+                <i class="bi bi-linkedin"></i>
                 <i class="bi bi-facebook"></i>
                 <i class="bi bi-instagram"></i>
             </div>

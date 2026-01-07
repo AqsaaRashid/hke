@@ -3,11 +3,11 @@
     <div class="top-bar">
         <div class="container d-flex justify-content-between align-items-center">
           <div class="text-end ms-auto me-5">
- <i class="fa-solid fa-envelope-open-text"></i></i> rosamikamal@hkebuilders.com
+ <i class="fa-solid fa-envelope-open-text"></i></i> rowaimkamal@hkebuilders.com
 </div>
 
                 <div class="social-icons d-flex align-items-center">
-    <a href="#"><i class="fab fa-twitter"></i></a>
+    <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
     <a href="#"><i class="fab fa-facebook-f"></i></a>
     <a href="#"><i class="fab fa-instagram"></i></a>
     <a href="#"><i class="fab fa-linkedin-in"></i></a>

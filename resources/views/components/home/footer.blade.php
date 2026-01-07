@@ -25,13 +25,14 @@
         <div class="footer-box">
             <img src="/images/hke-logo.png" class="footer-logo">
 
-            <p class="footer-text">
+            <p class="footer-text" style=" text-align: justify !important;">
+
                 From residential homes to commercial complexes, we deliver top-quality construction with precision,
                 durability, and attention to detail. Every project is built to meet the highest.
             </p>
 
             <div class="footer-social">
-                <a><i class="fab fa-twitter"></i></a>
+                <!-- <a><i class="fab fa-twitter"></i></a> -->
                 <a><i class="fab fa-facebook"></i></a>
                 <a><i class="fab fa-instagram"></i></a>
                 <a><i class="fab fa-linkedin"></i></a>
@@ -103,11 +104,18 @@
 
 <div class="footer-bottom-bar">
     <div class="footer-bottom ">
-        <p style="margin-left:-15px; margin-top:8px;">Copyright@hkebuilders2025</p>
+        <p style=" margin-top:8px;">Copyright@hkebuilders2025</p>
+<p style="margin-left:-15px; margin-top:8px;">
+    Powered By 
+    <a href="https://daamsolutions.com" target="_blank" style="text-decoration:none; color:inherit;">
+        DaamSolutions
+    </a>
+</p>
+
 
         <div class="footer-links" style="margin-top:8px;">
            <a href="{{ route('terms') }}" style="color: inherit; text-decoration: none;">
-    Terms of Service
+    Terms & Conditions
 </a>
 &nbsp;&nbsp;
 <a href="{{ route('policy') }}" style="margin-right:30px; color: inherit; text-decoration: none;">

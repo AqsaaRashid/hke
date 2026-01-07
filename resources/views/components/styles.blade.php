@@ -418,6 +418,7 @@ z-index: 5; /* 🔥 Forces image to be in front */
     font-size: 13px;
     line-height: 1.6;
     color: #555;
+    text-align: justify !important;
 }
 
 /* Swiper spacing */

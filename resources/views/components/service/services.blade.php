@@ -7,7 +7,7 @@
                 <div class="service-main-card">
                     <div class="service-title-label">Building Construction</div>
                     <h2 class="service-main-heading">SERVICE OVERVIEW</h2>
-                    <p class="service-description">
+                    <p class="service-description" style=" text-align: justify !important;">
                         Our Building Construction service covers every stage of the construction
                         process—from initial planning and site preparation to structural development
                         and final finishing. We focus on delivering strong, durable, and modern

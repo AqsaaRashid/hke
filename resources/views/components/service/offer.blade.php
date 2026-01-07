@@ -1,11 +1,11 @@
 <section class="offer-section">
     <h2 class="offer-title">What we Offer</h2>
 
-    <p class="offer-text">
+    <p class="offer-text" style=" text-align: justify !important;">
         We provide complete building construction solutions designed to deliver strong, modern, and 
-        long-lasting<br> structures. Our team combines expert planning, skilled craftsmanship, and reliable 
-        project management to ensure <br>every building is completed with quality, safety, and precision. 
-        From foundational work to final finishing, we cover all<br> essential aspects to bring your vision to 
+        long-lasting structures. Our team combines expert planning, skilled craftsmanship, and reliable 
+        project management to ensure every building is completed with quality, safety, and precision. 
+        From foundational work to final finishing, we cover all essential aspects to bring your vision to 
         life with excellence.
     </p>
 

@@ -18,10 +18,10 @@
         <div class="rwww-content">
             <div>
                 <h2 class="rwww-title">SITARA MARKET</h2>
-                <p class="rwww-description">
-                    The Sitara Market Construction Project stands<br>
-                    as a landmark example of our commitment to <br>
-                    quality, innovation, and precision Designed to<br>
+                <p class="rwww-description" style=" text-align: justify !important;">
+                    The Sitara Market Construction Project stands
+                    as a landmark example of our commitment to 
+                    quality, innovation, and precision Designed to
                    accommodate a wide range.
                 </p>
 

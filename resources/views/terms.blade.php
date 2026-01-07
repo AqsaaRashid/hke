@@ -8,7 +8,7 @@
 <section class="terms" style="margin-left:110px !important;">
 
     <div class="terms-hero">
-        <h1 class="terms-title">Terms & Conditions</h1>
+        <h1 class="terms-title" >Terms & Conditions</h1>
     </div>
 
     <div class="terms-content">
@@ -103,7 +103,7 @@
             <br>
             <strong>Email:</strong>
             <a class="terms-link" href="mailto:rowaimikamal@hkebuilders.com">
-                rowaimikamal@hkebuilders.com
+                rowaimkamal@hkebuilders.com
             </a>
         </p>
 
@@ -120,48 +120,79 @@
     background: #ffffff;
     color: #000000;
     padding: 30px 0;
+    text-align: justify !important;
 }
 
 .terms-hero {
     margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif !important;
+
 }
 
 .terms-title {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     margin: 0;
+    font-family: 'Roboto', sans-serif !important;
+    text-align: justify !important;
+
+
 }
 
 .terms-content {
-    max-width: 900px;
+    max-width: 1100px;
+    font-family: 'Roboto', sans-serif !important;
+        font-size: 14px;
+            text-align: justify !important;
+
+
+
 }
 
 .terms-section-title {
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 600;
     margin: 20px 0 6px;
+    font-family: 'Roboto', sans-serif !important;
+
 }
 
 .terms-text {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 10px;
     line-height: 1.6;
+    font-family: 'Roboto', sans-serif !important;
+        text-align: justify !important;
+
+
 }
 
 .terms-list {
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 18px;
     margin-bottom: 12px;
+    font-family: 'Roboto', sans-serif !important;
+        text-align: justify !important;
+
+
 }
 
 .terms-list li {
+        font-size: 14px;
+    text-align: justify !important;
+
     margin-bottom: 6px;
+    font-family: 'Roboto', sans-serif !important;
+    
+
 }
 
 .terms-divider {
     height: 1px;
     background: #e5e5e5;
     margin: 16px 0;
+    font-family: 'Roboto', sans-serif !important;
+
 }
 
 .terms-link {
