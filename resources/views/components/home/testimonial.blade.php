@@ -160,5 +160,20 @@
         height: 60px;
     }
 }
+@media (max-width: 767px) {
+    .testimonial-card {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 
+    .arrows {
+        gap: 40px;          /* reduce massive gap */
+        position: static;   /* stop absolute overflow */
+        margin-top: 15px;
+    }
+    .testimonial-section {
+    overflow-x: hidden;
+}
+
+}
 </style>

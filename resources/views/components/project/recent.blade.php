@@ -1,4 +1,4 @@
-<section class="recenttt-work">
+<section class="recenttt-work" style="overflow-x:hidden !important;">
     <div class="rw-header">
     <div>
             <p class="sub-title" style="color: #2761A3 !important;">Projects</p>
@@ -127,9 +127,13 @@
 
     /* Adjust the view details button */
     .viewww-details {
-        font-size: 14px;
-        padding: 0 10px;
+        font-size: 12px;
+        padding: 0 6px;
     }
+    .faq-btn{
+        padding-right: 10px !important;
+    }
+    
 }
 
 </style>

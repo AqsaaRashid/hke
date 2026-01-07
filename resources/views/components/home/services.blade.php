@@ -1,4 +1,4 @@
-<section class="servicess-section py-5" style="margin-top:-140px;">
+<section class="servicess-section py-5" style="margin-top:-140px; overflow-x:hidden !important;">
     <div class="text-center mb-5">
         <h6 class="servicess-subtitle">Our Services</h6>
         <h2 class="servicess-title">WHAT WE OFFER</h2>

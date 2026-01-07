@@ -216,5 +216,20 @@
         font-size: 12px;
     }
 }
+@media (max-width: 768px) {
+
+    .faq-section,
+    .faq-header,
+    .faq-grid {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .faq-btn {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+}
 
 </style>

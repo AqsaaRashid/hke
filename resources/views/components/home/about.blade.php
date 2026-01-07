@@ -1,4 +1,4 @@
-<section class="about-section" style="margin-top:10px; color:#1a1a1a;">
+<section class="about-section" style="margin-top:10px; color:#1a1a1a; overflow-x:hidden !important;">
   <div class="container">
     <div class="row align-items-center">
       <!-- LEFT IMAGE -->

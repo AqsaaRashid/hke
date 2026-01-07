@@ -130,6 +130,9 @@
         border-radius: 12px;
         object-fit: cover;
     }
+    .why-section{
+        overflow-x: hidden !important;
+    }
 }
 @media (max-width: 480px) {
 
@@ -153,6 +156,9 @@
 
     .why-image-box img {
         height: 220px !important;
+    }
+    .why-section{
+        overflow-x: hidden !important;
     }
 }
 

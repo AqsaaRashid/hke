@@ -2,7 +2,9 @@
   
   body {
     font-family: 'Roboto', sans-serif !important;
-    overflow-x: hidden ;
+    overflow-x: hidden !important;
+     margin: 0 !important;
+    padding: 0 !important; 
 
   }
 

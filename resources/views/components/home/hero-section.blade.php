@@ -13,7 +13,7 @@
     </div>
 
     <!-- Stats Section -->
-    <div class="container position-relative">
+    <div class="container position-relative" >
         <div class="row stats-row justify-content-center text-white gx-0">
             <div class="col-md-4 col-sm-12">
                 <div class="stat-card dark-blue d-flex align-items-center justify-content-center p-4">
