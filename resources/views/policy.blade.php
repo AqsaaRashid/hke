@@ -5,7 +5,7 @@
 @include('components.policy')
 
 
-<section class="terms" style="margin-left:110px !important;">
+<section class="terms">
 
     <div class="terms-hero">
         <h1 class="terms-title">Privacy Policy</h1>
@@ -118,6 +118,7 @@
     color: #000000;
     padding: 30px 0;
     text-align: justify !important;
+    margin-left:110px !important;
 }
 
 .terms-hero {
@@ -202,4 +203,10 @@
         padding: 0 15px;
     }
 }
+@media (max-width: 768px) {
+    .terms {
+        margin-left: 0 !important;
+    }
+}
+
 </style>
