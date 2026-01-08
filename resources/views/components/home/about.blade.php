@@ -16,45 +16,74 @@
         <div class="accordion custom-accordion" id="aboutAccordion">
           <!-- History -->
           <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
-                <i class="fa-solid fa-clock me-2"></i> History
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show">
-              <div class="accordion-body">
-                Founded with a commitment to quality and precision, our company began its journey with a vision to redefine construction standards. Over the years, we have delivered projects that stand as a testament to our craftsmanship and integrity.
-              </div>
-            </div>
-          </div>
+  <h2 class="accordion-header" id="headingOne">
+    <button class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne">
+      <i class="fa-solid fa-clock me-2"></i> History
+    </button>
+  </h2>
+
+  <div id="collapseOne"
+       class="accordion-collapse collapse show"
+       aria-labelledby="headingOne"
+       data-bs-parent="#aboutAccordion">
+    <div class="accordion-body">
+      Founded with a commitment to quality and precision, our company began its journey with a vision to redefine construction standards.Over the years, we have delivered projects that stand as a testament to our craftsmanship and integrity.
+    </div>
+  </div>
+</div>
+
 
           <!-- Quality -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                <i class="fa-solid fa-award me-2"></i> Quality
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                We ensure every project meets international quality benchmarks, employing premium materials and expert supervision at every stage.
-              </div>
-            </div>
-          </div>
+         <div class="accordion-item">
+  <h2 class="accordion-header" id="headingTwo">
+    <button class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo">
+      <i class="fa-solid fa-award me-2"></i> Quality
+    </button>
+  </h2>
+
+  <div id="collapseTwo"
+       class="accordion-collapse collapse"
+       aria-labelledby="headingTwo"
+       data-bs-parent="#aboutAccordion">
+    <div class="accordion-body">
+We ensure every project meets international quality benchmarks, employing premium materials and expert supervision at every stage.
+    </div>
+  </div>
+</div>
+
 
           <!-- Future Plans -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-                <i class="fa-solid fa-lightbulb me-2"></i> Future Plans
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                Looking forward, we aim to integrate sustainable practices and smart technologies to create a lasting impact on the construction industry.
-              </div>
-            </div>
-          </div>
+           <div class="accordion-item">
+  <h2 class="accordion-header" id="headingThree">
+    <button class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree">
+     <i class="fa-solid fa-lightbulb me-2"></i> Future Plans
+    </button>
+  </h2>
+
+  <div id="collapseThree"
+       class="accordion-collapse collapse"
+       aria-labelledby="headingThree"
+       data-bs-parent="#aboutAccordion">
+    <div class="accordion-body">
+      Looking forward, we aim to integrate sustainable practices and smart technologies to create a lasting impact on the construction industry.
+    </div>
+  </div>
+</div>
         </div>
 
       </div>
