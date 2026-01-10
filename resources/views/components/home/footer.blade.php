@@ -33,9 +33,9 @@
 
             <div class="footer-social">
                 <!-- <a><i class="fab fa-twitter"></i></a> -->
-                <a><i class="fab fa-facebook"></i></a>
-                <a><i class="fab fa-instagram"></i></a>
-                <a><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61586556233272"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/hkebuilders/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/hke-builders-0077983a4/"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
 

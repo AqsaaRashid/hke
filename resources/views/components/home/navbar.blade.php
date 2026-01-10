@@ -8,9 +8,9 @@
 
                 <div class="social-icons d-flex align-items-center">
     <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61586556233272"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/hkebuilders/"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/hke-builders-0077983a4/"><i class="fab fa-linkedin-in"></i></a>
     <a href="contact" class="connect-btn">CONNECT WITH US</a>
 </div>
 
