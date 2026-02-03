@@ -2211,3 +2211,31 @@ z-index: 5; /* 🔥 Forces image to be in front */
 
 
 </style>
+<script>
+/* =====================================
+   TESTIMONIAL ANIMATION – REPEAT ON SCROLL
+   ===================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const testimonialCard = document.querySelector(".testimonial-card");
+
+    if (!testimonialCard) return;
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("animate");
+                } else {
+                    entry.target.classList.remove("animate");
+                }
+            });
+        },
+        {
+            threshold: 0.45
+        }
+    );
+
+    observer.observe(testimonialCard);
+});
+</script>

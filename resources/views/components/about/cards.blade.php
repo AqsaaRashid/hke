@@ -146,4 +146,94 @@
     }
 }
    
+
+   /* =====================================
+   HISTORY SECTION SCROLL ANIMATIONS
+   ===================================== */
+
+/* Image animation */
+.history-image-box {
+    opacity: 0;
+    transform: scale(1.05);
+    transition: opacity 1s ease, transform 1.2s ease;
+}
+
+.history-image-box.animate {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Center icon animation */
+.history-icon {
+    opacity: 0;
+    transform: scale(0.7);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition-delay: 0.3s;
+}
+
+.history-image-box.animate .history-icon {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Cards animation */
+.history-card {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Active state */
+.history-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 </style>
+<script>
+/* =====================================
+   HISTORY SECTION — SCROLL REPEAT ANIMATION
+   ===================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const imageBox = document.querySelector(".history-image-box");
+    const cards = document.querySelectorAll(".history-card");
+
+    /* Image + icon observer */
+    if (imageBox) {
+        const imageObserver = new IntersectionObserver(
+            entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animate");
+                    } else {
+                        entry.target.classList.remove("animate");
+                    }
+                });
+            },
+            { threshold: 0.4 }
+        );
+
+        imageObserver.observe(imageBox);
+    }
+
+    /* Cards observer (staggered) */
+    const cardObserver = new IntersectionObserver(
+        entries => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add("animate");
+                    }, index * 180);
+                } else {
+                    entry.target.classList.remove("animate");
+                }
+            });
+        },
+        { threshold: 0.35 }
+    );
+
+    cards.forEach(card => cardObserver.observe(card));
+});
+</script>

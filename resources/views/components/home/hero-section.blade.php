@@ -1,9 +1,25 @@
 <section class="hero-section">
+    <!-- HERO BACKGROUND SLIDER (ADD ONLY) -->
+<div class="hero-bg-slider">
+    <div class="hero-bg-slide active" style="background-image:url('/images/header-bg.png');"></div>
+    <div class="hero-bg-slide" style="background-image:url('/images/header-bg.png');"></div>
+    <div class="hero-bg-slide" style="background-image:url('/images/header-bg.png');"></div>
+</div>
+
+    
     <div class="hero-overlay d-flex align-items-center">
         <div class="container text-white">
             <div class="hero-content">
                 <h1 class="fw-bold">ENGINEERING<br>YOUR DREAMS</h1>
                 <p class="lead mt-2">Crafting the future of construction.</p>
+                <!-- Hero Animated Slider (ADD ONLY) -->
+<div class="hero-slider mt-3">
+    <span class="slide active">Residential Construction</span>
+    <span class="slide">Commercial Projects</span>
+    <span class="slide">Industrial Engineering</span>
+    <span class="slide">Smart Infrastructure</span>
+</div>
+
                 <div class="hero-buttons mt-4">
                     <a href="services" class="btn btn-primary me-2">OUR SERVICES</a>
                     <a href="javascript:void(0)" class="btn btn-light text-dark" onclick="openQuote()">REQUEST A QUOTE</a>
@@ -254,5 +270,202 @@ function closeQuote() {
     }
 }
 
+/* =======================================
+   HERO TEXT SLIDER (ADD ONLY)
+   ======================================= */
+
+.hero-slider {
+    position: relative;
+    height: 28px;
+    overflow: hidden;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.hero-slider .slide {
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.6s ease-in-out;
+}
+
+.hero-slider .slide.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Mobile size tweak */
+@media (max-width: 768px) {
+    .hero-slider {
+        font-size: 16px;
+        height: 24px;
+    }
+}
+/* =======================================
+   HERO BACKGROUND SLIDER (SAFE VERSION)
+   DOES NOT AFFECT STATS CARDS
+   ======================================= */
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background slider layer */
+.hero-bg-slider {
+    position: absolute;
+    inset: 0;
+    z-index: 0; /* BELOW content, ABOVE body */
+}
+
+/* Each slide */
+.hero-bg-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transform: scale(1.08);
+    transition:
+        opacity 1.4s ease-in-out,
+        transform 6s ease-in-out;
+}
+
+/* Active slide */
+.hero-bg-slide.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Ensure content + stats stay on top */
+.hero-overlay,
+.stats-row {
+    position: relative;
+    z-index: 2;
+}
+
+/* === FIX: Allow stats cards to be visible === */
+.hero-section {
+    overflow: visible !important;
+}
+/* === FIX: Force stats above background slider === */
+.stats-row {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+/* =======================================
+   STAT CARD ANIMATION (PROFESSIONAL)
+   ======================================= */
+
+.stat-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+/* When visible */
+.stat-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Slight hover polish (optional but premium) */
+.stat-card:hover {
+    transform: translateY(-4px);
+    transition: transform 0.3s ease;
+}
+/* =======================================
+   FIX STATS RESPONSIVENESS (MOBILE ONLY)
+   ======================================= */
+
+@media (max-width: 768px) {
+
+    .stats-row {
+        position: static !important;   /* remove absolute */
+        margin-top: 30px !important;   /* spacing below hero */
+        z-index: auto;
+    }
+
+    .hero-section {
+        padding-bottom: 30px; /* space for stats */
+    }
+}
+html, body {
+    overflow-x: hidden !important;
+}
 
 </style>
+<script>
+/* Hero Slider Animation (ADD ONLY) */
+let slides = document.querySelectorAll('.hero-slider .slide');
+let currentSlide = 0;
+
+setInterval(() => {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+}, 2500);
+</script>
+<script>
+/* HERO BACKGROUND IMAGE SLIDER – SAFE */
+const heroBgSlides = document.querySelectorAll('.hero-bg-slide');
+let heroBgIndex = 0;
+
+setInterval(() => {
+    heroBgSlides[heroBgIndex].classList.remove('active');
+    heroBgIndex = (heroBgIndex + 1) % heroBgSlides.length;
+    heroBgSlides[heroBgIndex].classList.add('active');
+}, 5000);
+</script>
+<script>
+/* =======================================
+   STATS ANIMATION + COUNT UP
+   ======================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".stat-card");
+
+    cards.forEach((card, index) => {
+        // Stagger animation
+        setTimeout(() => {
+            card.classList.add("animate");
+            animateCount(card);
+        }, index * 200);
+    });
+});
+
+/* Count-up animation */
+function animateCount(card) {
+    const numberEl = card.querySelector("h4");
+    if (!numberEl) return;
+
+    const text = numberEl.innerText.replace("+", "").replace("K", "");
+    const isK = numberEl.innerText.includes("K");
+    const target = parseInt(text) * (isK ? 1000 : 1);
+
+    let current = 0;
+    const increment = Math.ceil(target / 60);
+
+    const counter = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            clearInterval(counter);
+            numberEl.innerText = isK
+                ? (target / 1000).toFixed(0) + "K+"
+                : target + "+";
+        } else {
+            numberEl.innerText = isK
+                ? Math.floor(current / 1000) + "K+"
+                : current + "+";
+        }
+    }, 20);
+}
+</script>

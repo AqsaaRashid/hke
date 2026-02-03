@@ -176,4 +176,50 @@
 }
 
 }
+/* ==============================
+   TESTIMONIAL SCROLL ANIMATION
+   ============================== */
+
+/* Card animation */
+.testimonial-card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+/* Client image animation */
+.testimonial-card .client-img img {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition-delay: 0.15s;
+}
+
+/* Text animation */
+.testimonial-text,
+.author,
+.bi-heart {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+/* ACTIVE STATES */
+.testimonial-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.testimonial-card.animate .client-img img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.testimonial-card.animate .testimonial-text,
+.testimonial-card.animate .author,
+.testimonial-card.animate .bi-heart {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 </style>

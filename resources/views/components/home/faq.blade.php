@@ -231,5 +231,58 @@
     }
 
 }
+/* ==============================
+   FAQ SCROLL ANIMATION
+   ============================== */
+
+/* Initial state */
+.faq-header,
+.faq-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+/* Active animation */
+.faq-header.animate,
+.faq-item.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger effect */
+.faq-item {
+    transition-delay: 0.15s;
+}
 
 </style>
+<script>
+/* =====================================
+   FAQ – REPEAT ON SCROLL (UP & DOWN)
+   ===================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector(".faq-header");
+    const items = document.querySelectorAll(".faq-item");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("animate");
+                } else {
+                    entry.target.classList.remove("animate");
+                }
+            });
+        },
+        {
+            threshold: 0.25
+        }
+    );
+
+    if (header) observer.observe(header);
+    items.forEach(item => observer.observe(item));
+});
+</script>

@@ -155,5 +155,60 @@
         font-size: 14px;
     }
 }
+/* =====================================
+   WHY CHOOSE US – CLASSIC ANIMATION
+===================================== */
+
+.whyy-card,
+.arrowss {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Center (large) card slightly stronger */
+.whyy-card.large {
+    transform: translateY(45px) scale(0.96);
+}
+
+.whyy-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.whyy-card.large.animate {
+    transform: translateY(0) scale(1);
+}
+
+.arrowss.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 </style>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const elements = document.querySelectorAll(".whyy-card, .arrowss");
+
+    if (!elements.length) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.transitionDelay = `${index * 140}ms`;
+                    entry.target.classList.add("animate");
+                } else {
+                    entry.target.classList.remove("animate");
+                    entry.target.style.transitionDelay = "0ms";
+                }
+            });
+        },
+        { threshold: 0.25 }
+    );
+
+    elements.forEach(el => observer.observe(el));
+});
+</script>

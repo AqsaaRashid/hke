@@ -409,6 +409,51 @@ function closeQuote() {
         width: 100%;
     }
 }
+/* ==============================
+   LOGO SCROLL ANIMATION (SAFE)
+   ============================== */
+
+.logo img {
+    opacity: 0;
+    transform: scale(0.92);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+/* Active state */
+.logo img.animate {
+    opacity: 1;
+    transform: scale(1);
+}
 
 
 </style>
+<script>
+/* =====================================
+   LOGO ANIMATION – REPEAT ON SCROLL
+   ===================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const logoImg = document.querySelector(".logo img");
+
+    if (!logoImg) return;
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("animate");
+                } else {
+                    entry.target.classList.remove("animate");
+                }
+            });
+        },
+        {
+            threshold: 0.6
+        }
+    );
+
+    observer.observe(logoImg);
+});
+</script>

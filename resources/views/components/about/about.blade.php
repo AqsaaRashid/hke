@@ -108,5 +108,117 @@
         font-size: 13px;
     }
 }
+/* =====================================
+   ACHIEVEMENTS SCROLL ANIMATION
+   ===================================== */
+
+.achievements-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.achievements-section.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Individual stat animation */
+.stats-box {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.stats-box.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 </style>
+<script>
+/* =====================================
+   ACHIEVEMENTS — SCROLL REPEAT ANIMATION
+   ===================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const section = document.querySelector(".achievements-section");
+    const boxes = document.querySelectorAll(".stats-box");
+
+    /* Section observer */
+    const sectionObserver = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("animate");
+                    animateStats();
+                } else {
+                    entry.target.classList.remove("animate");
+                    resetStats();
+                }
+            });
+        },
+        { threshold: 0.35 }
+    );
+
+    sectionObserver.observe(section);
+
+    /* Stats observer (staggered) */
+    const boxObserver = new IntersectionObserver(
+        entries => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add("animate");
+                    }, index * 180);
+                } else {
+                    entry.target.classList.remove("animate");
+                }
+            });
+        },
+        { threshold: 0.4 }
+    );
+
+    boxes.forEach(box => boxObserver.observe(box));
+
+    /* Count-up animation */
+    function animateStats() {
+        boxes.forEach(box => {
+            const numEl = box.querySelector("h3");
+            const original = numEl.dataset.value || numEl.innerText;
+
+            numEl.dataset.value = original;
+            const clean = original.replace("+", "").replace("K", "");
+            const isK = original.includes("K");
+            const target = parseInt(clean) * (isK ? 1000 : 1);
+
+            let current = 0;
+            const step = Math.ceil(target / 60);
+
+            const counter = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    clearInterval(counter);
+                    numEl.innerText = original;
+                } else {
+                    numEl.innerText = isK
+                        ? Math.floor(current / 1000) + "K+"
+                        : current + "+";
+                }
+            }, 20);
+        });
+    }
+
+    function resetStats() {
+        boxes.forEach(box => {
+            const numEl = box.querySelector("h3");
+            if (numEl.dataset.value) {
+                numEl.innerText = "0";
+            }
+        });
+    }
+
+});
+</script>

@@ -160,5 +160,46 @@
         font-size: 13px;
     }
 }
+/* ===============================
+   SERVICES SCROLL ANIMATION
+================================ */
+
+.service-cards {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.service-cards.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 </style>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const serviceCards = document.querySelectorAll(".service-cards");
+
+    if (!serviceCards.length) return;
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.transitionDelay = `${index * 120}ms`;
+                    entry.target.classList.add("animate");
+                } else {
+                    entry.target.classList.remove("animate");
+                    entry.target.style.transitionDelay = "0ms";
+                }
+            });
+        },
+        {
+            threshold: 0.25
+        }
+    );
+
+    serviceCards.forEach(card => observer.observe(card));
+});
+</script>

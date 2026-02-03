@@ -185,4 +185,94 @@
     }
 }
 
+
+/* ==============================
+   RECENT WORK – CLASSIC ANIMATION
+   ============================== */
+
+/* Initial hidden state */
+.recent-work,
+.rw-image,
+.rw-content,
+.rw-info div,
+.view-details {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+/* Image zoom prep */
+.rw-image img {
+    transform: scale(1.08);
+    transition: transform 1.2s ease;
+}
+
+/* Active animation */
+.recent-work.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.recent-work.animate .rw-image {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.recent-work.animate .rw-image img {
+    transform: scale(1);
+}
+
+.recent-work.animate .rw-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger info lines */
+.recent-work.animate .rw-info div {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.recent-work.animate .rw-info div:nth-child(1) { transition-delay: 0.2s; }
+.recent-work.animate .rw-info div:nth-child(2) { transition-delay: 0.35s; }
+.recent-work.animate .rw-info div:nth-child(3) { transition-delay: 0.5s; }
+
+/* Button reveal */
+.recent-work.animate .view-details {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
+}
+.recent-work {
+    transition-delay: 0.1s;
+}
+
 </style>
+<script>
+/* =====================================
+   RECENT WORK – REPEAT ON SCROLL
+   ===================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const section = document.querySelector(".recent-work");
+
+    if (!section) return;
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    section.classList.add("animate");
+                } else {
+                    section.classList.remove("animate");
+                }
+            });
+        },
+        {
+            threshold: 0.3   // 30% visible → animate
+        }
+    );
+
+    observer.observe(section);
+});
+</script>
