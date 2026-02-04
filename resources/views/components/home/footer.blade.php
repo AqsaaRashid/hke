@@ -46,7 +46,7 @@
             <p class="footerr-line">
     <span class="icon-circle"><i class="fa fa-phone"></i></span>
     +92 339 0099098<br>
-    +92 339 0099098
+   +92 339 8887959
 </p>
 
 <p class="footerr-line">
@@ -57,8 +57,8 @@
 
 <p class="footerr-line">
     <span class="icon-circle"><i class="fa fa-envelope"></i></span>
-    roaviimkamal@hkebuilders.com<br>
-    rowaimikamal@hkebuilders.com
+    Rowaimkamal@huzaimkamal<br>enterprises.com<br>
+    Tamourkhadim@huzaimkamal<br>enterprises.com
 </p>
 
         </div>

@@ -3,7 +3,7 @@
     <div class="top-bar">
         <div class="container d-flex justify-content-between align-items-center">
           <div class="text-end ms-auto me-5">
- <i class="fa-solid fa-envelope-open-text"></i></i> rowaimkamal@hkebuilders.com
+ <i class="fa-solid fa-envelope-open-text me-2"></i>Rowaimkamal@huzaimkamalenterprises.com
 </div>
 
                 <div class="social-icons d-flex align-items-center">

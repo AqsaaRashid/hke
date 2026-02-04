@@ -1,19 +1,135 @@
 <section class="hero-section">
+     <!-- HERO BACKGROUND SLIDER -->
+    <div class="hero-bg-slider">
+        <div class="hero-bg-slide active" style="background-image:url('/images/header-bg.png');"></div>
+        <div class="hero-bg-slide" style="background-image:url('/images/header-bg.png');"></div>
+        <div class="hero-bg-slide" style="background-image:url('/images/header-bg.png');"></div>
+    </div>
     <div class="hero-overlay d-flex align-items-center">
         <div class="container text-white">
             <div class="hero-content">
-                <p class="breadcrumb-text">
-<a href="{{ url('/') }}" class="breadcrumb-link">Home</a> &gt; Contact Us &gt;
-
-</p>
-
-                <h1 class="fw-bold">CONTACT US</h1>
                 
-                
+                <p class="breadcrumb-text hero-animate">
+                    <a href="{{ url('/') }}" class="breadcrumb-link">Home</a> &gt; Contact Us &gt;
+                </p>
+
+                <h1 class="fw-bold hero-animate">CONTACT US</h1>
+
             </div>
         </div>
     </div>
-
-    <!-- Stats Section -->
-    
 </section>
+
+
+
+<style>
+/* ===============================
+   HERO BASE
+================================ */
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* ===============================
+   BACKGROUND SLIDER
+================================ */
+
+.hero-bg-slider {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-bg-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transform: scale(1.08);
+    transition: opacity 1.4s ease-in-out, transform 6s ease-in-out;
+}
+
+.hero-bg-slide.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ===============================
+   OVERLAY
+================================ */
+
+.hero-overlay {
+    position: relative;
+    z-index: 2;
+    background: rgba(0,0,0,0.45);
+}
+
+/* ===============================
+   HERO TEXT SCROLL ANIMATION
+================================ */
+/* =====================================
+   HERO – CLASSIC SCROLL ANIMATION
+===================================== */
+
+.hero-animate {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.hero-animate.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    /* ===============================
+       HERO BACKGROUND SLIDER
+    ================================ */
+    const heroBgSlides = document.querySelectorAll(".hero-bg-slide");
+    let heroBgIndex = 0;
+
+    if (heroBgSlides.length > 1) {
+        setInterval(() => {
+            heroBgSlides[heroBgIndex].classList.remove("active");
+            heroBgIndex = (heroBgIndex + 1) % heroBgSlides.length;
+            heroBgSlides[heroBgIndex].classList.add("active");
+        }, 5000);
+    }
+
+    /* ===============================
+       HERO TEXT SCROLL ANIMATION (FIXED)
+    ================================ */
+    const heroItems = document.querySelectorAll(".hero-animate");
+
+    if (!heroItems.length) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    heroItems.forEach((el, index) => {
+                        el.style.transitionDelay = `${index * 120}ms`;
+                        el.classList.add("animate");
+                    });
+                } else {
+                    heroItems.forEach(el => {
+                        el.style.transitionDelay = "0ms";
+                        el.classList.remove("animate");
+                    });
+                }
+            });
+        },
+        { threshold: 0.4 }
+    );
+
+    observer.observe(document.querySelector(".hero-content"));
+});
+</script>

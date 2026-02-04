@@ -1,5 +1,5 @@
 <section class="contact" style="margin-bottom:40px;">
-<div class="contact-section">
+<div class="contact-section contact-animate">
     <h6>Contact Us</h6>
     <h2>MESSAGE US FOR DETAILS</h2>
 </div>
@@ -7,7 +7,7 @@
 <div class="contact-wrapper">
 
     {{-- LEFT FORM --}}
-    <div class="contact-form-box" style="width:500px !important;">
+<div class="contact-form-box contact-animate-left" style="width:500px !important;">
         <form>
             <!-- @csrf -->
 
@@ -24,7 +24,7 @@
     </div>
 
     {{-- RIGHT SIDE --}}
-    <div class="iinfo-box">
+<div class="iinfo-box contact-animate-right">
 
         {{-- ADDRESS --}}
         <div class="iinfo-row">
@@ -68,8 +68,8 @@
 
 </div>
 
-
 <div class="contact-map">
+
     <iframe 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.1274818595043!2d73.109!3d33.620!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df95123456789%3A0xabcdef123456789!2sGulberg%20Greens%2C%20Islamabad!5e0!3m2!1sen!2sPK!4v1730000000000"
         width="100%"
@@ -289,5 +289,70 @@
         border-radius: 6px;
     }
 }
+/* =====================================
+   CONTACT SECTION – SCROLL ANIMATIONS
+===================================== */
+
+.contact-animate,
+.contact-animate-left,
+.contact-animate-right {
+    opacity: 0;
+    transition: all 0.9s ease;
+}
+
+/* Fade up */
+.contact-animate {
+    transform: translateY(40px);
+}
+
+/* Slide from left */
+.contact-animate-left {
+    transform: translateX(-60px);
+}
+
+/* Slide from right */
+.contact-animate-right {
+    transform: translateX(60px);
+}
+
+/* Active state */
+.contact-animate.animate,
+.contact-animate-left.animate,
+.contact-animate-right.animate {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.contact-form-box,
+.iinfo-box {
+    will-change: transform, opacity;
+}
 
 </style>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const animatedItems = document.querySelectorAll(
+        ".contact-animate, .contact-animate-left, .contact-animate-right"
+    );
+
+    if (!animatedItems.length) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("animate");
+                } else {
+                    entry.target.classList.remove("animate");
+                }
+            });
+        },
+        {
+            threshold: 0.25
+        }
+    );
+
+    animatedItems.forEach(item => observer.observe(item));
+});
+</script>

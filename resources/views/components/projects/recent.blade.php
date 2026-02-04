@@ -1,4 +1,4 @@
-<section class="recenttt-work">
+<section class="recenttt-work recent-animate">
     <div class="rwww-header">
        <div style=" margin-top:30px;text-align:center; width:100%; display:flex; flex-direction:column; align-items:center; justify-content:center;">
     <p class="subbb-title">Projects</p>
@@ -311,4 +311,60 @@
     }
 }
 
+/* =====================================
+   RECENT WORK – CLASSIC SCROLL ANIMATION
+===================================== */
+
+.recent-animate .rwww-header,
+.recent-animate .rwww-card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+/* Animate in */
+.recent-animate.animate .rwww-header {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.recent-animate .rwww-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 </style>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const section = document.querySelector(".recent-animate");
+    if (!section) return;
+
+    const cards = section.querySelectorAll(".rwww-card");
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    section.classList.add("animate");
+
+                    cards.forEach((card, index) => {
+                        card.style.transitionDelay = `${index * 160}ms`;
+                        card.classList.add("animate");
+                    });
+                } else {
+                    section.classList.remove("animate");
+
+                    cards.forEach(card => {
+                        card.style.transitionDelay = "0ms";
+                        card.classList.remove("animate");
+                    });
+                }
+            });
+        },
+        { threshold: 0.25 }
+    );
+
+    observer.observe(section);
+});
+</script>

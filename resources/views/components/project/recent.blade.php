@@ -1,6 +1,5 @@
-<section class="recenttt-work" style="overflow-x:hidden !important;">
-    <div class="rw-header">
-    <div>
+<section class="recenttt-work recent-animate" style="overflow-x:hidden !important;">
+<div class="rw-header recent-item">    <div>
             <p class="sub-title" style="color: #2761A3 !important;">Projects</p>
             <h2 class="main-title" style="color: #04182F !important;">RECENT PROJECTS</h2>
         </div>
@@ -11,12 +10,11 @@
     </div>
 
     <div class="rwww-card">
-        <div class="rwww-image">
+<div class="rwww-image recent-left">            
             <img src="/images/recent.png" alt="Construction Image">
         </div>
 
-        <div class="rwww-content">
-            <div>
+ <div class="rwww-content recent-right">            <div>
                 <h2 class="rwww-title">SITARA MARKET</h2>
                 <p class="rwww-description" style=" text-align: justify !important;">
                     The Sitara Market Construction Project stands
@@ -135,5 +133,78 @@
     }
     
 }
+/* ===============================
+   RECENT PROJECTS – SCROLL ANIMATION
+================================ */
+
+.recent-animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.recent-animate.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Header fade */
+.recent-item {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.recent-animate.animate .recent-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Image slide from left */
+.recent-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.recent-animate.animate .recent-left {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Content slide from right */
+.recent-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.recent-animate.animate .recent-right {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 
 </style>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const recentSection = document.querySelector(".recent-animate");
+    if (!recentSection) return;
+
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("animate");
+                } else {
+                    entry.target.classList.remove("animate"); // replay
+                }
+            });
+        },
+        { threshold: 0.3 }
+    );
+
+    observer.observe(recentSection);
+});
+</script>
